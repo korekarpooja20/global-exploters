@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+          <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <title>Product Details | Global Exporters</title>
+    
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f9f7;
+            color: #222;
+        }
+
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            padding: 18px 25px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #176b3a;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: #d99b00;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #176b3a;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .product-box {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product-content h1 {
+            color: #176b3a;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .details-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+        }
+
+        .details-table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+
+        .details-table td:first-child {
+            font-weight: bold;
+            background: #f1f6f2;
+            width: 40%;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 22px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .quote-btn {
+            background: #176b3a;
+            color: white;
+        }
+
+        .whatsapp-btn {
+            background: #128c7e;
+            color: white;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #176b3a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .product-box {
+                grid-template-columns: 1fr;
+            }
+
+            .product-image img {
+                height: 300px;
+            }
+
+            .product-content h1 {
+                font-size: 28px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="navbar">
+
+        <a href="home.html" class="logo">
+            Global <span>Exporters</span>
+        </a>
+
+        <nav>
+
+            <a href="home.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= PRODUCT DETAILS ================= -->
+
+<div class="container">
+
+    <a href="products.html" class="back-btn">
+        ← Back to Products
+    </a>
+
+
+    <div class="product-box">
+
+
+        <!-- IMAGE -->
+
+        <div class="product-image">
+
+            <img id="productImage"
+                 src=""
+                 alt="Product">
+
+        </div>
+
+
+        <!-- CONTENT -->
+
+        <div class="product-content">
+
+            <h1 id="productName">
+                Product
+            </h1>
+
+            <p id="productSubtitle"
+               class="subtitle">
+            </p>
+
+            <p id="productDescription"
+               class="description">
+            </p>
+
+
+            <!-- DETAILS TABLE -->
+
+            <table class="details-table">
+
+                <tr>
+                    <td>Product Type</td>
+                    <td id="productType"></td>
+                </tr>
+
+                <tr>
+                    <td>Origin</td>
+                    <td>India</td>
+                </tr>
+
+                <tr>
+                    <td>Quality</td>
+                    <td id="productQuality"></td>
+                </tr>
+
+                <tr>
+                    <td>Packaging</td>
+                    <td id="productPackaging"></td>
+                </tr>
+
+                <tr>
+                    <td>Supply</td>
+                    <td>Bulk Export</td>
+                </tr>
+
+            </table>
+
+
+            <!-- BUTTONS -->
+
+            <div class="buttons">
+
+                <a id="quoteButton"
+                   href="contact.html"
+                   class="btn quote-btn">
+
+                    Request a Quote
+
+                </a>
+
+
+                <a id="whatsappButton"
+                   href="#"
+                   target="_blank"
+                   class="btn whatsapp-btn">
+
+                    WhatsApp Enquiry
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+    const products = {
+
+        onion: {
+
+            name: "Fresh Onion",
+
+            subtitle:
+                "Indian Fresh Onion for International Export Markets",
+
+            image:
+                "images/onion.jpg",
+
+            description:
+                "Fresh Indian onion sourced according to buyer requirements and suitable for food, retail and commercial markets. Availability, quality specifications and packaging can be arranged according to order requirements.",
+
+            type:
+                "Fresh Vegetable",
+
+            quality:
+                "Export Quality",
+
+            packaging:
+                "Mesh Bags / Jute Bags / PP Bags / Customized Packaging"
+
+        },
+
+
+        fruits: {
+
+            name: "Fresh Fruits",
+
+            subtitle:
+                "Quality Indian Fresh Fruits",
+
+            image:
+                "images/fruits.jpg",
+
+            description:
+                "Fresh fruits sourced from reliable Indian suppliers according to buyer requirements and export specifications.",
+
+            type:
+                "Fresh Fruits",
+
+            quality:
+                "Export Quality",
+
+            packaging:
+                "As per buyer requirement"
+
+        },
+
+
+        vegetables: {
+
+            name: "Fresh Vegetables",
+
+            subtitle:
+                "Fresh Indian Vegetables for Export",
+
+            image:
+                "images/vegetables.jpg",
+
+            description:
+                "Fresh Indian vegetables sourced and coordinated according to international buyer requirements.",
+
+            type:
+                "Fresh Vegetables",
+
+            quality:
+                "Export Quality",
+
+            packaging:
+                "As per buyer requirement"
+
+        },
+
+
+        agro: {
+
+            name: "Agro Products",
+
+            subtitle:
+                "Selected Indian Agro Products",
+
+            image:
+                "images/agro.jpg",
+
+            description:
+                "Selected Indian agricultural products sourced from suitable suppliers for domestic and international buyers.",
+
+            type:
+                "Agricultural Products",
+
+            quality:
+                "Buyer Specification",
+
+            packaging:
+                "As per product and buyer requirement"
+
+        },
+
+
+        granite: {
+
+            name: "Indian Granite",
+
+            subtitle:
+                "Indian Granite for Construction and Architecture",
+
+            image:
+                "images/granite.jpg",
+
+            description:
+                "Indian granite sourced for construction, architectural and commercial applications with specifications based on buyer requirements.",
+
+            type:
+                "Natural Stone",
+
+            quality:
+                "Export Quality",
+
+            packaging:
+                "As per product and buyer requirement"
+
+        },
+
+
+        herbal: {
+
+            name: "Herbal Products",
+
+            subtitle:
+                "Indian Herbal Products",
+
+            image:
+                "images/herbal.jpg",
+
+            description:
+                "Indian herbal products sourced from suitable suppliers according to buyer specifications and applicable requirements.",
+
+            type:
+                "Herbal Products",
+
+            quality:
+                "Buyer Specification",
+
+            packaging:
+                "As per product and buyer requirement"
+
+        },
+
+
+        textile: {
+
+            name: "Indian Textiles",
+
+            subtitle:
+                "Quality Indian Textile Products",
+
+            image:
+                "images/textile.jpg",
+
+            description:
+                "Indian textile products sourced according to customer requirements, specifications and order quantity.",
+
+            type:
+                "Textile Products",
+
+            quality:
+                "Buyer Specification",
+
+            packaging:
+                "As per buyer requirement"
+
+        },
+
+
+        tiles: {
+
+            name: "Indian Tiles",
+
+            subtitle:
+                "Indian Tiles for Residential and Commercial Applications",
+
+            image:
+                "images/tiles.jpg",
+
+            description:
+                "Indian tiles sourced for residential, commercial and construction applications according to buyer requirements.",
+
+            type:
+                "Construction Material",
+
+            quality:
+                "Export Quality",
+
+            packaging:
+                "As per buyer requirement"
+
+        }
+
+    };
+
+
+    /* ================= GET PRODUCT FROM URL ================= */
+
+    const urlParams =
+        new URLSearchParams(window.location.search);
+
+    const productKey =
+        urlParams.get("product");
+
+
+    /* ================= SELECT PRODUCT ================= */
+
+    const product =
+        products[productKey] || products.onion;
+
+
+    /* ================= DISPLAY PRODUCT ================= */
+
+    document.getElementById("productName").textContent =
+        product.name;
+
+    document.getElementById("productSubtitle").textContent =
+        product.subtitle;
+
+    document.getElementById("productDescription").textContent =
+        product.description;
+
+    document.getElementById("productImage").src =
+        product.image;
+
+    document.getElementById("productImage").alt =
+        product.name;
+
+    document.getElementById("productType").textContent =
+        product.type;
+
+    document.getElementById("productQuality").textContent =
+        product.quality;
+
+    document.getElementById("productPackaging").textContent =
+        product.packaging;
+
+
+    /* ================= QUOTE LINK ================= */
+
+    document.getElementById("quoteButton").href =
+        "contact.html?product=" +
+        encodeURIComponent(product.name);
+
+
+    /* ================= WHATSAPP ================= */
+
+    const whatsappNumber =
+        "919999999999";
+
+    const whatsappMessage =
+        "Hello Global Exporters, I am interested in " +
+        product.name +
+        ". Please share product details, price and export terms.";
+
+    document.getElementById("whatsappButton").href =
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        encodeURIComponent(whatsappMessage);
+
+
+</script>
+
+
+</body>
+
+</html>

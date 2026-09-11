@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <title>Contact Us | Global Exporters</title>
+    
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f7f9fc;
+            color: #222;
+        }
+
+        header {
+            background: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #126b3f;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #126b3f;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+                        url("images/contact-banner.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 330px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1150px;
+            margin: 60px auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 34px;
+            color: #126b3f;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #666;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 35px;
+        }
+
+        .contact-info {
+            background: #126b3f;
+            color: white;
+            padding: 35px;
+            border-radius: 12px;
+        }
+
+        .contact-info h3 {
+            font-size: 27px;
+            margin-bottom: 25px;
+        }
+
+        .info-box {
+            margin-bottom: 25px;
+        }
+
+        .info-box h4 {
+            margin-bottom: 7px;
+        }
+
+        .info-box p {
+            color: #e7f5ed;
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,.08);
+        }
+
+        .contact-form h3 {
+            font-size: 27px;
+            margin-bottom: 25px;
+            color: #126b3f;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ddd;
+            border-radius: 7px;
+            font-size: 15px;
+        }
+
+        .form-group textarea {
+            height: 130px;
+            resize: vertical;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 7px;
+            background: #126b3f;
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #0d522f;
+        }
+
+        .whatsapp-btn {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            padding: 14px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        Global Exporters
+    </div>
+
+   <nav>
+
+    <a href="home.html">Home</a>
+
+    <a href="products.html">Products</a>
+
+    <a href="about.html">About Us</a>
+
+    <a href="export-services.html">
+        Export Services
+    </a>
+
+    <a href="markets.html">
+        Markets
+    </a>
+
+    <a href="contact.html" class="active">
+        Contact
+    </a>
+
+    <a href="contact.html" class="nav-quote">
+        Get a Quote
+    </a>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+    <div>
+        <h1>Contact Us</h1>
+        <p>Let's build global business together</p>
+    </div>
+
+</section>
+
+
+<section class="container">
+
+    <div class="section-title">
+
+        <h2>Get In Touch</h2>
+
+        <p>
+            Send us your requirement and our team will get back to you.
+        </p>
+
+    </div>
+
+
+    <div class="contact-wrapper">
+
+
+        <!-- CONTACT INFORMATION -->
+
+        <div class="contact-info">
+
+            <h3>Global Exporters</h3>
+
+            <div class="info-box">
+                <h4>📍 Office Address</h4>
+                <p>Add your business address here</p>
+            </div>
+
+            <div class="info-box">
+                <h4>📞 Phone / WhatsApp</h4>
+                <p>Add your business phone number</p>
+            </div>
+
+            <div class="info-box">
+                <h4>📧 Email</h4>
+                <p>Add your business email</p>
+            </div>
+
+            <div class="info-box">
+                <h4>🌎 Business</h4>
+                <p>
+                    Import & Export of quality products
+                    for domestic and international buyers.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- FORM -->
+
+        <div class="contact-form">
+
+            <h3>Send Your Enquiry</h3>
+
+            <!-- YOUR FORMSPREE URL IS HERE -->
+
+            <form
+                id="enquiryForm"
+                action="https://formspree.io/f/mnpqlylr"
+                method="POST"
+            >
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>Your Name *</label>
+
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Company Name</label>
+
+                        <input
+                            type="text"
+                            name="company"
+                            placeholder="Enter company name"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>Country *</label>
+
+                        <input
+                            type="text"
+                            name="country"
+                            placeholder="Enter country"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Email *</label>
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Enter email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>WhatsApp / Phone *</label>
+
+                        <input
+                            type="tel"
+                            name="phone"
+                            placeholder="Enter WhatsApp number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Select Product *</label>
+
+                        <select
+                            name="product"
+                            id="product"
+                            required
+                        >
+
+                            <option value="">
+                                Select Product
+                            </option>
+
+                            <option value="Fresh Onion">
+                                Fresh Onion
+                            </option>
+
+                            <option value="Fresh Fruits">
+                                Fresh Fruits
+                            </option>
+
+                            <option value="Fresh Vegetables">
+                                Fresh Vegetables
+                            </option>
+
+                            <option value="Agro Products">
+                                Agro Products
+                            </option>
+
+                            <option value="Granite">
+                                Granite
+                            </option>
+
+                            <option value="Herbal Products">
+                                Herbal Products
+                            </option>
+
+                            <option value="Textiles">
+                                Textiles
+                            </option>
+
+                            <option value="Tiles">
+                                Tiles
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Required Quantity</label>
+
+                    <input
+                        type="text"
+                        name="quantity"
+                        placeholder="Example: 20 MT"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Your Message *</label>
+
+                    <textarea
+                        name="message"
+                        placeholder="Write your requirement..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn"
+                >
+                    Send Enquiry
+                </button>
+
+            </form>
+
+
+            <a
+                href="https://wa.me/918459640092"
+                target="_blank"
+                class="whatsapp-btn"
+            >
+                💬 Enquire on WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 Global Exporters. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script>
+
+    /* AUTO SELECT PRODUCT */
+
+    const urlParams =
+        new URLSearchParams(window.location.search);
+
+    const productParam =
+        urlParams.get("product");
+
+    const productSelect =
+        document.getElementById("product");
+
+    const productMap = {
+
+        onion: "Fresh Onion",
+        fruits: "Fresh Fruits",
+        vegetables: "Fresh Vegetables",
+        agro: "Agro Products",
+        granite: "Granite",
+        herbal: "Herbal Products",
+        textile: "Textiles",
+        tiles: "Tiles"
+
+    };
+
+    if (productParam && productMap[productParam]) {
+
+        productSelect.value =
+            productMap[productParam];
+
+    }
+    // ENQUIRY FORM SUBMISSION
+
+const enquiryForm = document.getElementById("enquiryForm");
+
+enquiryForm.addEventListener("submit", async function (event) {
+
+    event.preventDefault();
+
+    const formData = new FormData(enquiryForm);
+
+    const enquiryData = {
+        name: formData.get("name"),
+        company: formData.get("company"),
+        country: formData.get("country"),
+        email: formData.get("email"),
+        phone: formData.get("phone"),
+        product: formData.get("product"),
+        quantity: formData.get("quantity"),
+        message: formData.get("message")
+    };
+
+    try {
+
+        const response = await fetch(
+            "http://localhost:5000/api/enquiry",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(enquiryData)
+            }
+        );
+
+        const result = await response.json();
+
+        if (result.success) {
+
+            alert("Thank you! Your enquiry has been submitted successfully.");
+
+            enquiryForm.reset();
+
+        } else {
+
+            alert("Something went wrong. Please try again.");
+
+        }
+
+    } catch (error) {
+
+        console.error(error);
+
+        alert(
+            "Unable to connect to the server. Please make sure the backend is running."
+        );
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>

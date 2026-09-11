@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Global Exporters provides reliable export services including product sourcing, quality inspection, packaging, documentation and shipping coordination.">
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <title>Export Services | Global Exporters</title>
+    
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #fff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* ================= HEADER ================= */
+
+        header {
+            width: 100%;
+            background: #fff;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            padding: 18px 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: 700;
+            color: #176b3a;
+        }
+
+        .logo span {
+            color: #d99b00;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .nav-links a {
+            color: #222;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #176b3a;
+        }
+
+        .nav-quote {
+            background: #176b3a;
+            color: #fff !important;
+            padding: 10px 18px;
+            border-radius: 6px;
+        }
+
+        .nav-quote:hover {
+            background: #0e4f2a;
+        }
+
+        .menu-btn {
+            display: none;
+            font-size: 25px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #176b3a;
+        }
+
+
+        /* ================= HERO ================= */
+
+        .services-hero {
+            min-height: 390px;
+
+            background:
+                linear-gradient(
+                    rgba(0, 70, 35, 0.82),
+                    rgba(0, 70, 35, 0.82)
+                ),
+                url("images/export-services.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            color: #fff;
+
+            padding: 70px 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+        }
+
+
+        /* ================= COMMON ================= */
+
+        .services-section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 75px 25px;
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 760px;
+            margin: 0 auto 50px;
+        }
+
+        .section-heading h2 {
+            font-size: 34px;
+            color: #176b3a;
+            margin-bottom: 12px;
+        }
+
+        .section-heading p {
+            color: #666;
+            font-size: 16px;
+        }
+
+
+        /* ================= SERVICES ================= */
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .service-card {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            padding: 32px 25px;
+            text-align: center;
+
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+        }
+
+        .service-icon {
+            width: 65px;
+            height: 65px;
+            margin: 0 auto 20px;
+
+            border-radius: 50%;
+            background: #f2f8f4;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 30px;
+        }
+
+        .service-card h3 {
+            color: #176b3a;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+
+        /* ================= PROCESS ================= */
+
+        .process-section {
+            background: #f7fbf8;
+            max-width: none;
+        }
+
+        .process-section .section-heading,
+        .process-grid {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            padding: 0 25px;
+        }
+
+        .process-card {
+            background: #fff;
+            padding: 30px 20px;
+            text-align: center;
+
+            border-radius: 12px;
+            border: 1px solid #e5e5e5;
+
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+        }
+
+        .process-number {
+            font-size: 28px;
+            font-weight: 700;
+            color: #d99b00;
+            margin-bottom: 12px;
+        }
+
+        .process-card h3 {
+            color: #176b3a;
+            font-size: 19px;
+            margin-bottom: 8px;
+        }
+
+        .process-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+
+        /* ================= WHY US ================= */
+
+        .why-section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 75px 25px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+
+            align-items: center;
+        }
+
+        .why-content h2 {
+            color: #176b3a;
+            font-size: 34px;
+            margin-bottom: 18px;
+        }
+
+        .why-content p {
+            color: #666;
+            margin-bottom: 22px;
+        }
+
+        .why-list {
+            list-style: none;
+        }
+
+        .why-list li {
+            margin-bottom: 14px;
+            font-size: 15px;
+            color: #333;
+        }
+
+        .why-list li::before {
+            content: "✓";
+            color: #176b3a;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .why-image {
+            min-height: 350px;
+
+            background:
+                linear-gradient(
+                    rgba(0, 70, 35, 0.15),
+                    rgba(0, 70, 35, 0.15)
+                ),
+                url("images/export-business.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            border-radius: 14px;
+        }
+
+
+        /* ================= CTA ================= */
+
+        .cta-section {
+            background: #176b3a;
+            color: #fff;
+
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .cta-section h2 {
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+
+        .cta-section p {
+            max-width: 700px;
+            margin: 0 auto 25px;
+
+            font-size: 16px;
+            opacity: 0.95;
+        }
+
+        .cta-btn {
+            display: inline-block;
+
+            background: #d99b00;
+            color: #fff;
+
+            padding: 13px 25px;
+            border-radius: 6px;
+
+            font-weight: 700;
+        }
+
+        .cta-btn:hover {
+            background: #c58c00;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #102b1d;
+            color: #fff;
+            padding: 55px 25px 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 45px;
+        }
+
+        .footer-box h3 {
+            margin-bottom: 18px;
+            color: #d99b00;
+        }
+
+        .footer-box p {
+            color: #ccc;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .footer-box a {
+            display: block;
+            color: #ccc;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .footer-box a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 35px auto 0;
+
+            padding-top: 20px;
+
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+            text-align: center;
+            color: #aaa;
+            font-size: 13px;
+        }
+
+
+        /* ================= TABLET ================= */
+
+        @media (max-width: 950px) {
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 700px) {
+
+            .navbar {
+                padding: 15px 20px;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+
+                background: #fff;
+
+                flex-direction: column;
+                align-items: flex-start;
+
+                padding: 20px;
+                gap: 18px;
+
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .hero-content h1 {
+                font-size: 36px;
+            }
+
+            .hero-content p {
+                font-size: 16px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .why-section {
+                grid-template-columns: 1fr;
+            }
+
+            .why-image {
+                min-height: 280px;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="navbar">
+
+            <div class="logo">
+                Global <span>Exporters</span>
+            </div>
+
+            <button class="menu-btn" onclick="toggleMenu()">
+                ☰
+            </button>
+
+            <nav class="nav-links" id="navLinks">
+
+                <a href="home.html">Home</a>
+
+                <a href="products.html">Products</a>
+
+                <a href="about.html">About Us</a>
+
+                <a href="export-services.html" class="active">
+                    Export Services
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="contact.html" class="nav-quote">
+                    Get a Quote
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="services-hero">
+
+        <div class="hero-content">
+
+            <h1>Our Export Services</h1>
+
+            <p>
+                Reliable Export Support from Product Sourcing
+                to International Delivery
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section class="services-section">
+
+        <div class="section-heading">
+
+            <h2>What We Offer</h2>
+
+            <p>
+                We provide end-to-end export support to help
+                international buyers source Indian products
+                with confidence.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🌾
+                </div>
+
+                <h3>Product Sourcing</h3>
+
+                <p>
+                    We help international buyers source suitable
+                    Indian products and connect with reliable suppliers.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🔍
+                </div>
+
+                <h3>Quality Inspection</h3>
+
+                <p>
+                    Product quality and buyer requirements are
+                    coordinated before shipment.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    📦
+                </div>
+
+                <h3>Packaging & Labelling</h3>
+
+                <p>
+                    We coordinate suitable packaging and labelling
+                    according to product and buyer requirements.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    📄
+                </div>
+
+                <h3>Export Documentation</h3>
+
+                <p>
+                    We coordinate important export documentation
+                    required for smooth international trade.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🚢
+                </div>
+
+                <h3>Shipping Coordination</h3>
+
+                <p>
+                    We assist with shipment planning and coordination
+                    from India to the destination country.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🌍
+                </div>
+
+                <h3>International Buyer Support</h3>
+
+                <p>
+                    We maintain clear communication and support
+                    buyers throughout the export process.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EXPORT PROCESS ================= -->
+
+    <section class="services-section process-section">
+
+        <div class="section-heading">
+
+            <h2>Our Export Process</h2>
+
+            <p>
+                A simple and transparent process designed
+                for smooth international business.
+            </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    01
+                </div>
+
+                <h3>Requirement</h3>
+
+                <p>
+                    Share your product requirement,
+                    quantity and destination.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    02
+                </div>
+
+                <h3>Sourcing</h3>
+
+                <p>
+                    We identify suitable products
+                    and reliable suppliers in India.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    03
+                </div>
+
+                <h3>Quality & Packing</h3>
+
+                <p>
+                    Product quality, packaging and
+                    documentation are coordinated.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    04
+                </div>
+
+                <h3>Shipment</h3>
+
+                <p>
+                    Shipment is coordinated for
+                    international delivery.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WHY US ================= -->
+
+    <section class="why-section">
+
+        <div class="why-content">
+
+            <h2>Why Work With Us?</h2>
+
+            <p>
+                Global Exporters connects international buyers
+                with Indian products and export support through
+                a simple and reliable process.
+            </p>
+
+            <ul class="why-list">
+
+                <li>Buyer-focused product sourcing</li>
+
+                <li>Reliable supplier coordination</li>
+
+                <li>Quality requirement coordination</li>
+
+                <li>Flexible bulk-order support</li>
+
+                <li>Packaging and logistics coordination</li>
+
+                <li>Clear communication throughout the process</li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="why-image"></div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta-section">
+
+        <h2>Looking for an Indian Supplier?</h2>
+
+        <p>
+            Share your product requirement with us.
+            We can help coordinate sourcing, quality,
+            packaging and export requirements.
+        </p>
+
+        <a href="contact.html" class="cta-btn">
+            Request a Quote
+        </a>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+
+            <div class="footer-box">
+
+                <h3>Global Exporters</h3>
+
+                <p>
+                    Connecting international buyers with
+                    quality Indian products and reliable
+                    export support.
+                </p>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <a href="home.html">Home</a>
+
+                <a href="products.html">Products</a>
+
+                <a href="about.html">About Us</a>
+
+                <a href="export-services.html">
+                    Export Services
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>Our Services</h3>
+
+                <a href="export-services.html">
+                    Product Sourcing
+                </a>
+
+                <a href="export-services.html">
+                    Quality Inspection
+                </a>
+
+                <a href="export-services.html">
+                    Export Documentation
+                </a>
+
+                <a href="export-services.html">
+                    Shipping Coordination
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 Global Exporters. All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        function toggleMenu() {
+
+            const navLinks =
+                document.getElementById("navLinks");
+
+            navLinks.classList.toggle("show");
+
+        }
+
+
+        const menuLinks =
+            document.querySelectorAll(".nav-links a");
+
+
+        menuLinks.forEach(function(link) {
+
+            link.addEventListener("click", function() {
+
+                document
+                    .getElementById("navLinks")
+                    .classList.remove("show");
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

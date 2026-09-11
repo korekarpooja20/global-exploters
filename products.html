@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore quality Indian products for international export markets with Global Exporters.">
+
+    <meta name="keywords"
+          content="Indian exporters, agricultural products, fresh onion, fruits, vegetables, granite, textiles, tiles">
+
+    <meta name="author"
+          content="Global Exporters">
+
+       <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <title>Our Products | Global Exporters</title>
+    
+
+    <!-- ================= CSS ================= -->
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* ================= HEADER ================= */
+
+        header {
+            width: 100%;
+            background: #ffffff;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            padding: 18px 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: 700;
+            color: #176b3a;
+        }
+
+        .logo span {
+            color: #d99b00;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #222;
+            font-size: 15px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #176b3a;
+        }
+
+        .nav-quote {
+            background: #176b3a;
+            color: #ffffff !important;
+            padding: 10px 18px;
+            border-radius: 6px;
+        }
+
+        .nav-quote:hover {
+            background: #0e4f2a;
+        }
+
+
+        /* ================= HERO ================= */
+
+        .products-hero {
+            background:
+                linear-gradient(
+                    rgba(0, 70, 35, 0.78),
+                    rgba(0, 70, 35, 0.78)
+                ),
+                url("images/products-banner.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            min-height: 330px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            color: #ffffff;
+
+            padding: 60px 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            opacity: 0.95;
+        }
+
+
+        /* ================= INTRO ================= */
+
+        .products-section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 70px 25px;
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 40px;
+        }
+
+        .section-heading h2 {
+            font-size: 34px;
+            color: #176b3a;
+            margin-bottom: 12px;
+        }
+
+        .section-heading p {
+            color: #666;
+            font-size: 16px;
+        }
+
+
+        /* ================= FILTER ================= */
+
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 45px;
+        }
+
+        .filter-btn {
+            border: 1px solid #176b3a;
+            background: #ffffff;
+            color: #176b3a;
+
+            padding: 10px 20px;
+
+            border-radius: 30px;
+
+            cursor: pointer;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            transition: 0.3s;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #176b3a;
+            color: #ffffff;
+        }
+
+
+        /* ================= PRODUCT GRID ================= */
+
+        .product-container {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 30px;
+        }
+
+
+        /* ================= PRODUCT CARD ================= */
+
+        .product-card {
+            background: #ffffff;
+
+            border-radius: 12px;
+
+            overflow: hidden;
+
+            border: 1px solid #e5e5e5;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.07);
+
+            transition: 0.3s;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-7px);
+
+            box-shadow:
+                0 12px 30px rgba(0, 0, 0, 0.12);
+        }
+
+
+        /* ================= PRODUCT IMAGE ================= */
+
+        .product-image {
+            height: 230px;
+            position: relative;
+            overflow: hidden;
+            background: #f4f4f4;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+
+            transition: 0.4s;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.06);
+        }
+
+        .product-category {
+            position: absolute;
+
+            top: 15px;
+            left: 15px;
+
+            background: #176b3a;
+            color: #ffffff;
+
+            padding: 6px 12px;
+
+            border-radius: 20px;
+
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+
+        /* ================= PRODUCT INFO ================= */
+
+        .product-info {
+            padding: 25px;
+
+            display: flex;
+            flex-direction: column;
+
+            flex: 1;
+        }
+
+        .product-info h3 {
+            color: #176b3a;
+
+            font-size: 23px;
+
+            margin-bottom: 10px;
+        }
+
+        .product-info p {
+            color: #666;
+
+            font-size: 14px;
+
+            margin-bottom: 15px;
+        }
+
+        .product-info ul {
+            list-style: none;
+
+            margin-bottom: 22px;
+        }
+
+        .product-info ul li {
+            position: relative;
+
+            padding-left: 20px;
+
+            margin-bottom: 7px;
+
+            font-size: 13px;
+
+            color: #444;
+        }
+
+        .product-info ul li::before {
+            content: "✓";
+
+            position: absolute;
+
+            left: 0;
+
+            color: #176b3a;
+
+            font-weight: bold;
+        }
+
+
+        /* ================= PRODUCT ACTIONS ================= */
+
+        .product-actions {
+            margin-top: auto;
+
+            display: flex;
+
+            gap: 10px;
+        }
+
+        .details-btn,
+        .quote-btn {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            min-height: 42px;
+
+            padding: 10px 14px;
+
+            border-radius: 6px;
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+            transition: 0.3s;
+
+            flex: 1;
+
+            text-align: center;
+        }
+
+        .details-btn {
+            background: #176b3a;
+            color: #ffffff;
+
+            border: 1px solid #176b3a;
+        }
+
+        .details-btn:hover {
+            background: #0e4f2a;
+            border-color: #0e4f2a;
+        }
+
+        .quote-btn {
+            background: #ffffff;
+            color: #176b3a;
+
+            border: 1px solid #176b3a;
+        }
+
+        .quote-btn:hover {
+            background: #176b3a;
+            color: #ffffff;
+        }
+
+
+        /* ================= CTA ================= */
+
+        .products-cta {
+            margin-top: 70px;
+
+            background: #f2f8f4;
+
+            border-radius: 15px;
+
+            padding: 50px 30px;
+
+            text-align: center;
+        }
+
+        .products-cta h2 {
+            color: #176b3a;
+
+            font-size: 30px;
+
+            margin-bottom: 12px;
+        }
+
+        .products-cta p {
+            color: #666;
+
+            max-width: 650px;
+
+            margin: 0 auto 25px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+
+            background: #176b3a;
+            color: #ffffff;
+
+            padding: 13px 25px;
+
+            border-radius: 6px;
+
+            font-weight: 600;
+
+            transition: 0.3s;
+        }
+
+        .cta-btn:hover {
+            background: #0e4f2a;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #102b1d;
+
+            color: #ffffff;
+
+            margin-top: 30px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+
+            margin: auto;
+
+            padding: 55px 25px;
+
+            display: grid;
+
+            grid-template-columns:
+                1.5fr 1fr 1fr;
+
+            gap: 40px;
+        }
+
+        .footer-box h3 {
+            font-size: 21px;
+
+            margin-bottom: 15px;
+        }
+
+        .footer-box h3 span {
+            color: #d99b00;
+        }
+
+        .footer-box p {
+            color: #d6d6d6;
+
+            font-size: 14px;
+
+            max-width: 400px;
+        }
+
+        .footer-box ul {
+            list-style: none;
+        }
+
+        .footer-box ul li {
+            margin-bottom: 9px;
+        }
+
+        .footer-box ul li a {
+            color: #d6d6d6;
+
+            font-size: 14px;
+
+            transition: 0.3s;
+        }
+
+        .footer-box ul li a:hover {
+            color: #ffffff;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.15);
+
+            text-align: center;
+
+            padding: 18px 20px;
+
+            font-size: 13px;
+
+            color: #cfcfcf;
+        }
+
+
+        /* ================= MOBILE MENU ================= */
+
+        .menu-btn {
+            display: none;
+
+            font-size: 25px;
+
+            background: none;
+
+            border: none;
+
+            cursor: pointer;
+
+            color: #176b3a;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 950px) {
+
+            .product-container {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .footer-container {
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 700px) {
+
+            .navbar {
+                padding: 15px 20px;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+
+                position: absolute;
+
+                top: 70px;
+                left: 0;
+
+                width: 100%;
+
+                background: #ffffff;
+
+                flex-direction: column;
+
+                padding: 20px;
+
+                gap: 18px;
+
+                box-shadow:
+                    0 5px 15px rgba(0,0,0,0.08);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .hero-content h1 {
+                font-size: 36px;
+            }
+
+            .hero-content p {
+                font-size: 15px;
+            }
+
+            .products-section {
+                padding: 50px 18px;
+            }
+
+            .section-heading h2 {
+                font-size: 28px;
+            }
+
+            .product-container {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 450px) {
+
+            .product-actions {
+                flex-direction: column;
+            }
+
+            .product-image {
+                height: 210px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="home.html"
+           class="logo">
+            Global <span>Exporters</span>
+        </a>
+
+
+        <button class="menu-btn"
+                onclick="toggleMenu()">
+            ☰
+        </button>
+
+
+        <div class="nav-links"
+             id="navLinks">
+
+            <a href="home.html">
+                Home
+            </a>
+
+            <a href="products.html"
+               class="active">
+                Products
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="contact.html"
+               class="nav-quote">
+                Get a Quote
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="products-hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Our Products
+        </h1>
+
+        <p>
+            Quality Indian Products for Global Markets
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PRODUCTS SECTION ================= -->
+
+<section class="products-section">
+
+
+    <div class="section-heading">
+
+        <h2>
+            Explore Our Products
+        </h2>
+
+        <p>
+            We source and supply a diverse range of Indian
+            agricultural, construction, herbal and textile
+            products according to buyer requirements.
+        </p>
+
+    </div>
+
+
+
+    <!-- ================= FILTER ================= -->
+
+    <div class="filter-buttons">
+
+        <button class="filter-btn active"
+                onclick="filterProducts('all', this)">
+            All Products
+        </button>
+
+        <button class="filter-btn"
+                onclick="filterProducts('agriculture', this)">
+            Agriculture
+        </button>
+
+        <button class="filter-btn"
+                onclick="filterProducts('construction', this)">
+            Construction
+        </button>
+
+        <button class="filter-btn"
+                onclick="filterProducts('herbal', this)">
+            Herbal
+        </button>
+
+        <button class="filter-btn"
+                onclick="filterProducts('textile', this)">
+            Textile
+        </button>
+
+    </div>
+
+
+
+    <!-- ================= PRODUCT CONTAINER ================= -->
+
+    <div class="product-container">
+
+
+        <!-- PRODUCT 1 -->
+
+        <div class="product-card"
+             data-category="agriculture">
+
+            <div class="product-image">
+
+                <img src="images/onion.jpg"
+                     alt="Fresh Onion from India">
+
+                <span class="product-category">
+                    Agriculture
+                </span>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <h3>
+                    Fresh Onion
+                </h3>
+
+                <p>
+                    Premium Indian fresh onion suitable for
+                    international export markets.
+                </p>
+
+                <ul>
+                    <li>Export quality</li>
+                    <li>Quality checked</li>
+                    <li>Bulk supply</li>
+                </ul>
+
+
+                <div class="product-actions">
+
+                    <a href="products-details.html?product=onion"
+                       class="details-btn">
+                        View Details
+                    </a>
+
+                    <a href="contact.html?product=onion"
+                       class="quote-btn">
+                        Request Quote
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 2 -->
+
+        <div class="product-card"
+             data-category="agriculture">
+
+            <div class="product-image">
+
+                <img src="images/fruits.jpg"
+                     alt="Fresh Fruits from India">
+
+                <span class="product-category">
+                    Agriculture
+                </span>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <h3>
+                    Fresh Fruits
+                </h3>
+
+                <p>
+                    Quality Indian fresh fruits sourced from
+                    reliable suppliers for export markets.
+                </p>
+
+                <ul>
+                    <li>Quality sourcing</li>
+                    <li>Export packaging available</li>
+                    <li>Bulk orders</li>
+                </ul>
+
+
+                <div class="product-actions">
+
+                    <a href="products-details.html?product=fruits"
+                       class="details-btn">
+                        View Details
+                    </a>
+
+                    <a href="contact.html?product=fruits"
+                       class="quote-btn">
+                        Request Quote
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 3 -->
+
+        <div class="product-card"
+             data-category="agriculture">
+
+            <div class="product-image">
+
+                <img src="images/vegetables.jpg"
+                     alt="Fresh Vegetables from India">
+
+                <span class="product-category">
+                    Agriculture
+                </span>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <h3>
+                    Fresh Vegetables
+                </h3>
+
+                <p>
+                    Fresh and quality vegetables sourced
+                    according to international buyer requirements.
+                </p>
+
+                <ul>
+                    <li>Fresh sourcing</li>
+                    <li>Quality checking</li>
+                    <li>Bulk supply</li>
+                </ul>
+
+
+                <div class="product-actions">
+
+                    <a href="products-details.html?product=vegetables"
+                       class="details-btn">
+                        View Details
+                    </a>
+
+                    <a href="contact.html?product=vegetables"
+                       class="quote-btn">
+                        Request Quote
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 4 -->
+
+        <div class="product-card"
+             data-category="agriculture">
+
+            <div class="product-image">
+
+                <img src="images/agro.jpg"
+                     alt="Indian Agro Products">
+
+                <span class="product-category">
+                    Agriculture
+                </span>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <h3>
+                    Agro Products
+                </h3>
+
+                <p>
+                    Selected Indian agro products supplied to
+                    international buyers.
+                </p>
+
+                <ul>
+                    <li>Reliable suppliers</li>
+                    <li>Bulk availability</li>
+                    <li>Export support</li>
+                </ul>
+
+
+                <div class="product-actions">
+
+                    <a href="products-details.html?product=agro"
+                       class="details-btn">
+                        View Details
+                    </a>
+
+                    <a href="contact.html?product=agro"
+                       class="quote-btn">
+                        Request Quote
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 5 -->
+
+        <div class="product-card"
+             data-category="construction">
+
+            <div class="product-image">
+
+                <img src="images/granite.jpg"
+                     alt="Indian Granite">
+
+                <span class="product-category">
+                    Construction
+                </span>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <h3>
+                    Granite
+                </h3>
+
+                <p>
+                    Indian granite suitable for construction,
+                    architectural and commercial applications.
+                </p>
+
+                <ul>
+                    <li>Multiple varieties</li>
+                    <li>Bulk orders</li>
+                    <li>Export packaging</li>
+                </ul>
+
+
+                <div class="product-actions">
+
+                    <a href="products-details.html?product=granite"
+                       class="details-btn">
+                        View Details
+                    </a>
+
+                    <a href="contact.html?product=granite"
+                       class="quote-btn">
+                        Request Quote
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 6 -->
+
+        <div class="product-card"
+             data-category="herbal">
+
+            <div class="product-image">
+
+                <img src="images/herbal.jpg"
+                     alt="Indian Herbal Products">
+
+                <span class="product-category">
+                    Herbal
+                </span>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <h3>
+                    Herbal Products
+                </h3>
+
+                <p>
+                    Indian herbal products sourced from suitable
+                    suppliers according to buyer requirements.
+                </p>
+
+                <ul>
+                    <li>Supplier sourcing</li>
+                    <li>Buyer specifications</li>
+                    <li>Bulk requirements</li>
+                </ul>
+
+
+                <div class="product-actions">
+
+                    <a href="products-details.html?product=herbal"
+                       class="details-btn">
+                        View Details
+                    </a>
+
+                    <a href="contact.html?product=herbal"
+                       class="quote-btn">
+                        Request Quote
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 7 -->
+
+        <div class="product-card"
+             data-category="textile">
+
+            <div class="product-image">
+
+                <img src="images/textile.jpg"
+                     alt="Indian Textile Products">
+
+                <span class="product-category">
+                    Textile
+                </span>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <h3>
+                    Textiles
+                </h3>
+
+                <p>
+                    Quality Indian textile products for
+                    international markets and bulk buyers.
+                </p>
+
+                <ul>
+                    <li>Quality sourcing</li>
+                    <li>Custom requirements</li>
+                    <li>Bulk supply</li>
+                </ul>
+
+
+                <div class="product-actions">
+
+                    <a href="products-details.html?product=textile"
+                       class="details-btn">
+                        View Details
+                    </a>
+
+                    <a href="contact.html?product=textile"
+                       class="quote-btn">
+                        Request Quote
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 8 -->
+
+        <div class="product-card"
+             data-category="construction">
+
+            <div class="product-image">
+
+                <img src="images/tiles.jpg"
+                     alt="Indian Tiles">
+
+                <span class="product-category">
+                    Construction
+                </span>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <h3>
+                    Tiles
+                </h3>
+
+                <p>
+                    Indian tiles sourced for residential,
+                    commercial and construction applications.
+                </p>
+
+                <ul>
+                    <li>Multiple designs</li>
+                    <li>Bulk supply</li>
+                    <li>Export coordination</li>
+                </ul>
+
+
+                <div class="product-actions">
+
+                    <a href="products-details.html?product=tiles"
+                       class="details-btn">
+                        View Details
+                    </a>
+
+                    <a href="contact.html?product=tiles"
+                       class="quote-btn">
+                        Request Quote
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- ================= CTA ================= -->
+
+    <div class="products-cta">
+
+        <h2>
+            Looking for a Specific Product?
+        </h2>
+
+        <p>
+            Tell us your product requirements, quantity,
+            destination and specifications. Our team can
+            coordinate sourcing and export requirements.
+        </p>
+
+        <a href="contact.html"
+           class="cta-btn">
+            Send Your Requirement
+        </a>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <div class="footer-box">
+
+            <h3>
+                Global <span>Exporters</span>
+            </h3>
+
+            <p>
+                Connecting quality Indian products with
+                international buyers through reliable sourcing,
+                quality coordination and export support.
+            </p>
+
+        </div>
+
+
+        <div class="footer-box">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="home.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Products
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-box">
+
+            <h3>
+                Products
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="products-details.html?product=onion">
+                        Fresh Onion
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products-details.html?product=fruits">
+                        Fresh Fruits
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products-details.html?product=vegetables">
+                        Fresh Vegetables
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products-details.html?product=granite">
+                        Granite
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products-details.html?product=textile">
+                        Textiles
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 Global Exporters.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+    /* ================= MOBILE MENU ================= */
+
+    function toggleMenu() {
+
+        const navLinks =
+            document.getElementById("navLinks");
+
+        navLinks.classList.toggle("show");
+
+    }
+
+
+    /* ================= PRODUCT FILTER ================= */
+
+    function filterProducts(category, button) {
+
+        const products =
+            document.querySelectorAll(".product-card");
+
+        const buttons =
+            document.querySelectorAll(".filter-btn");
+
+
+        /* Remove active from all buttons */
+
+        buttons.forEach(function(btn) {
+
+            btn.classList.remove("active");
+
+        });
+
+
+        /* Add active to clicked button */
+
+        button.classList.add("active");
+
+
+        /* Filter products */
+
+        products.forEach(function(product) {
+
+            const productCategory =
+                product.getAttribute("data-category");
+
+
+            if (
+                category === "all" ||
+                productCategory === category
+            ) {
+
+                product.style.display = "flex";
+
+            } else {
+
+                product.style.display = "none";
+
+            }
+
+        });
+
+    }
+
+
+    /* ================= CLOSE MOBILE MENU ================= */
+
+    document.querySelectorAll(".nav-links a")
+        .forEach(function(link) {
+
+            link.addEventListener("click", function() {
+
+                document
+                    .getElementById("navLinks")
+                    .classList.remove("show");
+
+            });
+
+        });
+
+</script>
+
+
+</body>
+
+</html>

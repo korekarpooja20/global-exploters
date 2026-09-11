@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Global Exporters connects international buyers with quality Indian products across global markets.">
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <title>Global Markets | Global Exporters</title>
+    
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #fff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* HEADER */
+
+        header {
+            width: 100%;
+            background: #fff;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            padding: 18px 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: 700;
+            color: #176b3a;
+        }
+
+        .logo span {
+            color: #d99b00;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 27px;
+        }
+
+        .nav-links a {
+            color: #222;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #176b3a;
+        }
+
+        .nav-quote {
+            background: #176b3a;
+            color: #fff !important;
+            padding: 10px 18px;
+            border-radius: 6px;
+        }
+
+        .nav-quote:hover {
+            background: #0e4f2a;
+        }
+
+        .menu-btn {
+            display: none;
+            font-size: 25px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #176b3a;
+        }
+
+
+        /* HERO */
+
+        .markets-hero {
+            min-height: 400px;
+
+            background:
+                linear-gradient(
+                    rgba(0,70,35,0.82),
+                    rgba(0,70,35,0.82)
+                ),
+                url("images/markets-banner.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            color: #fff;
+
+            padding: 70px 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+        }
+
+
+        /* COMMON SECTION */
+
+        .section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 75px 25px;
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 760px;
+            margin: 0 auto 50px;
+        }
+
+        .section-heading h2 {
+            font-size: 34px;
+            color: #176b3a;
+            margin-bottom: 12px;
+        }
+
+        .section-heading p {
+            color: #666;
+            font-size: 16px;
+        }
+        /* GLOBAL APPROACH */
+
+        .approach-section {
+            background: #f7faf8;
+        }
+
+        .approach-grid {
+            max-width: 1200px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .approach-card {
+            background: #fff;
+            padding: 30px 25px;
+
+            border-radius: 12px;
+            border: 1px solid #e5e5e5;
+
+            text-align: center;
+
+            box-shadow: 0 5px 18px rgba(0,0,0,0.05);
+
+            transition: 0.3s;
+        }
+
+        .approach-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .approach-icon {
+            width: 60px;
+            height: 60px;
+
+            margin: 0 auto 18px;
+
+            background: #176b3a;
+            color: #fff;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .approach-card h3 {
+            color: #176b3a;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .approach-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+
+        /* CTA */
+
+        .cta-section {
+            background: #176b3a;
+            color: #fff;
+
+            text-align: center;
+
+            padding: 75px 25px;
+        }
+
+        .cta-section h2 {
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+
+        .cta-section p {
+            max-width: 700px;
+            margin: 0 auto 25px;
+
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .cta-btn {
+            display: inline-block;
+
+            background: #fff;
+            color: #176b3a;
+
+            padding: 13px 25px;
+
+            border-radius: 6px;
+
+            font-weight: 700;
+            font-size: 15px;
+
+            transition: 0.3s;
+        }
+
+        .cta-btn:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+        }
+        /* FOOTER */
+
+        footer {
+            background: #123524;
+            color: #fff;
+            padding: 55px 25px 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 45px;
+        }
+
+        .footer-column h3 {
+            font-size: 20px;
+            margin-bottom: 18px;
+        }
+
+        .footer-column p {
+            color: #cfd8d2;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .footer-column a {
+            display: block;
+            color: #cfd8d2;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .footer-column a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 40px auto 0;
+
+            padding-top: 18px;
+
+            border-top: 1px solid rgba(255,255,255,0.15);
+
+            text-align: center;
+
+            color: #b8c5bd;
+            font-size: 13px;
+        }
+
+
+        /* RESPONSIVE */
+
+        @media (max-width: 950px) {
+
+            .market-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .approach-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+
+        @media (max-width: 700px) {
+
+            .navbar {
+                padding: 15px 20px;
+            }
+
+            .logo {
+                font-size: 22px;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+
+                position: absolute;
+                top: 100%;
+                left: 0;
+
+                width: 100%;
+
+                background: #fff;
+
+                flex-direction: column;
+                align-items: stretch;
+
+                padding: 15px 20px;
+
+                box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+                gap: 0;
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .nav-links a {
+                padding: 12px 5px;
+                border-bottom: 1px solid #eee;
+            }
+
+            .nav-quote {
+                text-align: center;
+                margin-top: 8px;
+            }
+
+
+            .markets-hero {
+                min-height: 350px;
+                padding: 60px 20px;
+            }
+
+            .hero-content h1 {
+                font-size: 36px;
+            }
+
+            .hero-content p {
+                font-size: 16px;
+            }
+
+
+            .section {
+                padding: 55px 20px;
+            }
+
+            .section-heading h2 {
+                font-size: 28px;
+            }
+
+
+            .market-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .approach-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .cta-section {
+                padding: 60px 20px;
+            }
+
+            .cta-section h2 {
+                font-size: 28px;
+            }
+
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+        </style>
+
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="home.html" class="logo">
+            Global <span>Exporters</span>
+        </a>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
+
+            <a href="home.html">Home</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="export-services.html">
+                Export Services
+            </a>
+
+            <a href="markets.html" class="active">
+                Markets
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="contact.html" class="nav-quote">
+                Get a Quote
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="markets-hero">
+
+    <div class="hero-content">
+
+        <h1>Global Markets</h1>
+
+        <p>
+            Connecting Quality Indian Products
+            with Buyers Across International Markets
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- MARKETS -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <h2>Our Global Markets</h2>
+
+        <p>
+            We connect reliable Indian suppliers with
+            international buyers across multiple regions.
+        </p>
+
+    </div>
+
+
+    <div class="market-grid">
+
+
+        <!-- MIDDLE EAST -->
+
+        <div class="market-card">
+
+            <div class="market-image middle-east"></div>
+
+            <div class="market-content">
+
+                <h3>Middle East</h3>
+
+                <p>
+                    Supplying quality Indian products
+                    to growing markets across the Middle East.
+                </p>
+
+                <ul class="market-list">
+
+                    <li>United Arab Emirates</li>
+                    <li>Saudi Arabia</li>
+                    <li>Qatar</li>
+                    <li>Oman</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- EUROPE -->
+
+        <div class="market-card">
+
+            <div class="market-image europe"></div>
+
+            <div class="market-content">
+
+                <h3>Europe</h3>
+
+                <p>
+                    Building long-term trade relationships
+                    with European buyers and distributors.
+                </p>
+
+                <ul class="market-list">
+
+                    <li>United Kingdom</li>
+                    <li>Germany</li>
+                    <li>France</li>
+                    <li>Italy</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- NORTH AMERICA -->
+
+        <div class="market-card">
+
+            <div class="market-image north-america"></div>
+
+            <div class="market-content">
+
+                <h3>North America</h3>
+
+                <p>
+                    Connecting Indian suppliers with
+                    buyers across North American markets.
+                </p>
+
+                <ul class="market-list">
+
+                    <li>United States</li>
+                    <li>Canada</li>
+                    <li>Mexico</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- ASIA PACIFIC -->
+
+        <div class="market-card">
+
+            <div class="market-image asia"></div>
+
+            <div class="market-content">
+
+                <h3>Asia Pacific</h3>
+
+                <p>
+                    Expanding opportunities across
+                    fast-growing Asia Pacific markets.
+                </p>
+
+                <ul class="market-list">
+
+                    <li>Singapore</li>
+                    <li>Malaysia</li>
+                    <li>Indonesia</li>
+                    <li>Australia</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- AFRICA -->
+
+        <div class="market-card">
+
+            <div class="market-image africa"></div>
+
+            <div class="market-content">
+
+                <h3>Africa</h3>
+
+                <p>
+                    Exploring new trade opportunities
+                    across developing African markets.
+                </p>
+
+                <ul class="market-list">
+
+                    <li>South Africa</li>
+                    <li>Kenya</li>
+                    <li>Tanzania</li>
+                    <li>Nigeria</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- GLOBAL -->
+
+        <div class="market-card">
+
+            <div class="market-image global"></div>
+
+            <div class="market-content">
+
+                <h3>Global Opportunities</h3>
+
+                <p>
+                    Open to new buyers, distributors and
+                    long-term international partnerships.
+                </p>
+
+                <ul class="market-list">
+
+                    <li>New Buyer Markets</li>
+                    <li>Bulk Orders</li>
+                    <li>Private Requirements</li>
+                    <li>Long-Term Partnerships</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- GLOBAL APPROACH -->
+
+<section class="approach-section">
+
+    <div class="section">
+
+        <div class="section-heading">
+
+            <h2>Our Global Approach</h2>
+
+            <p>
+                We focus on quality, communication and
+                reliable export coordination.
+            </p>
+
+        </div>
+
+
+        <div class="approach-grid">
+
+
+            <div class="approach-card">
+
+                <div class="approach-icon">
+                    01
+                </div>
+
+                <h3>Indian Products</h3>
+
+                <p>
+                    We source quality products from
+                    reliable Indian suppliers.
+                </p>
+
+            </div>
+
+
+            <div class="approach-card">
+
+                <div class="approach-icon">
+                    02
+                </div>
+
+                <h3>Buyer Relationships</h3>
+
+                <p>
+                    We focus on transparent communication
+                    and long-term buyer relationships.
+                </p>
+
+            </div>
+
+
+            <div class="approach-card">
+
+                <div class="approach-icon">
+                    03
+                </div>
+
+                <h3>Export Coordination</h3>
+
+                <p>
+                    We coordinate sourcing, documentation
+                    and shipment requirements.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta-section">
+
+    <h2>Looking for Indian Products?</h2>
+
+    <p>
+        Share your product requirement, quantity and
+        destination with us. Our team will get back to you
+        with suitable sourcing and export options.
+    </p>
+
+    <a href="contact.html" class="cta-btn">
+        Send Your Requirement
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <div class="footer-column">
+
+            <h3>Global Exporters</h3>
+
+            <p>
+                Connecting quality Indian products
+                with international buyers and markets.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <a href="home.html">Home</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="markets.html">Markets</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Export Services</h3>
+
+            <a href="export-services.html">
+                Export Services
+            </a>
+
+            <a href="contact.html">
+                Request a Quote
+            </a>
+
+            <a href="contact.html">
+                Buyer Enquiry
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 Global Exporters.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+function toggleMenu() {
+
+    const navLinks =
+        document.getElementById("navLinks");
+
+    navLinks.classList.toggle("show");
+
+}
+
+
+const menuLinks =
+    document.querySelectorAll(".nav-links a");
+
+
+menuLinks.forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        document
+            .getElementById("navLinks")
+            .classList.remove("show");
+
+    });
+
+});
+
+</script>
+
+
+</body>
+
+</html> 

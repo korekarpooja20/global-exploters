@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <title>Global Exporters | Indian Products for Global Markets</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222;
+            background: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* ================= HEADER ================= */
+
+        header {
+            width: 100%;
+            background: #ffffff;
+            border-bottom: 1px solid #eeeeee;
+
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            min-height: 78px;
+
+            margin: auto;
+            padding: 0 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        /* LOGO */
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: #126b3f;
+            letter-spacing: .5px;
+        }
+
+        .logo span {
+            color: #222222;
+        }
+
+
+        /* NAVIGATION */
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: #333333;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #126b3f;
+        }
+
+
+        /* CONTACT BUTTON */
+
+        .nav-btn {
+            background: #126b3f;
+            color: #ffffff !important;
+
+            padding: 11px 20px;
+            border-radius: 5px;
+        }
+
+        .nav-btn:hover {
+            background: #0d522f;
+        }
+
+
+        /* ================= MOBILE NAVBAR ================= */
+
+        @media (max-width: 768px) {
+
+            .navbar {
+                min-height: 68px;
+                padding: 0 18px;
+            }
+
+            .logo {
+                font-size: 20px;
+            }
+
+            .nav-links {
+                gap: 12px;
+            }
+
+            .nav-links a {
+                font-size: 12px;
+            }
+
+            .nav-btn {
+                padding: 9px 12px;
+            }
+
+        }
+
+
+        @media (max-width: 500px) {
+
+            .nav-links a:not(.nav-btn) {
+                display: none;
+            }
+
+        }
+        /* HERO SECTION */
+
+.hero {
+    min-height: 620px;
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.78),
+            rgba(0,0,0,0.25)
+        ),
+        url("images/home-banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 25px;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.hero-label {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 54px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #78c99b;
+}
+
+.hero-description {
+    color: #eeeeee;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-btn {
+    padding: 14px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-btn-primary {
+    background: #126b3f;
+    color: white;
+}
+
+.hero-btn-secondary {
+    background: white;
+    color: #222;
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero-content {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-btn {
+        text-align: center;
+    }
+}
+/* =========================
+   TRUST BAR
+========================= */
+
+.trust-bar {
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+}
+
+.trust-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.trust-item {
+    text-align: center;
+    padding: 10px 20px;
+    border-right: 1px solid #eeeeee;
+}
+
+.trust-item:last-child {
+    border-right: none;
+}
+
+.trust-icon {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.trust-item h3 {
+    font-size: 16px;
+    color: #222222;
+    margin-bottom: 5px;
+}
+
+.trust-item p {
+    font-size: 13px;
+    color: #777777;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .trust-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 20px 10px;
+    }
+
+    .trust-item {
+        padding: 15px 8px;
+        border-right: none;
+    }
+
+    .trust-icon {
+        font-size: 22px;
+    }
+
+    .trust-item h3 {
+        font-size: 14px;
+    }
+
+    .trust-item p {
+        font-size: 12px;
+    }
+}
+/* =========================
+    ABOUT SECTION
+ ========================= */
+
+.about-section {
+    padding: 90px 25px;
+    background: #f7f9fc;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+/* IMAGE */
+
+.about-image {
+    height: 480px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* CONTENT */
+
+.about-content {
+    max-width: 580px;
+}
+
+.about-label {
+    color: #126b3f;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.about-content h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    color: #222;
+    margin-bottom: 22px;
+}
+
+.about-content h2 span {
+    color: #126b3f;
+}
+
+.about-content p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* POINTS */
+
+.about-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin: 25px 0 30px;
+}
+
+.about-point {
+    display: flex;
+    gap: 10px;
+}
+
+.about-check {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    background: #126b3f;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.about-point h4 {
+    color: #222;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.about-point small {
+    color: #777;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.about-btn {
+    display: inline-block;
+    background: #126b3f;
+    color: white;
+    padding: 13px 23px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.about-btn:hover {
+    background: #0d522f;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .about-section {
+        padding: 60px 20px;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-image {
+        height: 300px;
+    }
+
+    .about-content h2 {
+        font-size: 31px;
+    }
+
+    .about-points {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .about-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                Global <span>Exporters</span>
+            </a>
+
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    index
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="products.html">
+                    Products
+                </a>
+
+                <a href="contact.html" class="nav-btn">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+    <section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <div class="hero-label">
+                INDIAN PRODUCTS • GLOBAL MARKETS
+            </div>
+
+            <h1>
+                Connecting
+                <span>India</span>
+                With The World
+            </h1>
+
+            <p class="hero-description">
+                We connect reliable Indian suppliers with buyers
+                across international markets, providing quality
+                products, competitive pricing and dependable
+                export support.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="products.html"
+                   class="hero-btn hero-btn-primary">
+                    Explore Products →
+                </a>
+
+                <a href="contact.html"
+                   class="hero-btn hero-btn-secondary">
+                    Send Enquiry
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================
+     TRUST BAR
+========================= -->
+
+<section class="trust-bar">
+
+    <div class="trust-container">
+
+        <div class="trust-item">
+
+            <div class="trust-icon">🌾</div>
+
+            <h3>Indian Products</h3>
+
+            <p>Quality Products From India</p>
+
+        </div>
+
+
+        <div class="trust-item">
+
+            <div class="trust-icon">✓</div>
+
+            <h3>Quality Focus</h3>
+
+            <p>Products As Per Requirements</p>
+
+        </div>
+
+
+        <div class="trust-item">
+
+            <div class="trust-icon">🌍</div>
+
+            <h3>Global Markets</h3>
+
+            <p>Connecting India Worldwide</p>
+
+        </div>
+
+
+        <div class="trust-item">
+
+            <div class="trust-icon">🤝</div>
+
+            <h3>Reliable Support</h3>
+
+            <p>From Enquiry To Shipment</p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================
+     ABOUT SECTION
+========================= -->
+
+<section class="about-section">
+
+    <div class="about-container">
+
+        <!-- IMAGE -->
+
+        <div class="about-image">
+
+            <img
+                src="images/about.jpg"
+                alt="Global Exporters - Indian Products"
+            >
+
+        </div>
+
+
+        <!-- CONTENT -->
+
+        <div class="about-content">
+
+            <div class="about-label">
+                ABOUT GLOBAL EXPORTERS
+            </div>
+
+            <h2>
+                Connecting Indian
+                <span>Quality</span> With Global Markets
+            </h2>
+
+            <p>
+                Global Exporters is an India-based merchant export
+                company focused on connecting reliable Indian suppliers
+                with buyers across international markets.
+            </p>
+
+            <p>
+                We source and supply carefully selected products from
+                India based on buyer requirements, product quality,
+                quantity, pricing and delivery expectations.
+            </p>
+
+            <div class="about-points">
+
+                <div class="about-point">
+
+                    <div class="about-check">✓</div>
+
+                    <div>
+                        <h4>Reliable Sourcing</h4>
+                        <small>
+                            Products sourced from trusted Indian suppliers.
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="about-point">
+
+                    <div class="about-check">✓</div>
+
+                    <div>
+                        <h4>Quality Focus</h4>
+                        <small>
+                            Quality checked as per buyer requirements.
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="about-point">
+
+                    <div class="about-check">✓</div>
+
+                    <div>
+                        <h4>Global Reach</h4>
+                        <small>
+                            Connecting Indian products with global buyers.
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="about-point">
+
+                    <div class="about-check">✓</div>
+
+                    <div>
+                        <h4>Clear Communication</h4>
+                        <small>
+                            Transparent communication from enquiry to shipment.
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <a href="about.html" class="about-btn">
+                Learn More About Us →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
