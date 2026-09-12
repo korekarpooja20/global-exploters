@@ -76,7 +76,7 @@ if (contactForm) {
         try {
 
             const response = await fetch(
-                "https://global-exploters-backend-emev.vercel.app/api/enquiry",
+              "http://localhost:5000/api/enquiry",
                 {
 
                     method: "POST",
