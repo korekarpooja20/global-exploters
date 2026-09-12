@@ -31,7 +31,7 @@ document.querySelectorAll(".navbar a").forEach(function(link) {
 
 /* Contact Form */
 
-const contactForm = document.querySelector(".contact-box form");
+const contactForm = document.querySelector(".contact-form form");
 
 if (contactForm) {
 
